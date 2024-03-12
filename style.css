@@ -1,8 +1,38 @@
-*{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(127, 185, 127);
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-header {
-    color: blanchedalmond;
+body {
+    background-color: black;
+}
+
+.main-header {
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.main-header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.main-header div ul {
+    list-style-type: none;
+}
+
+.main header ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.image {
+    width: 500px;
+    border-radius: 15px 50px 30px;
 }
