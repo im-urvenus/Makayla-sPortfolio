@@ -9,30 +9,49 @@ body {
 }
 
 .main-header {
-    padding: 10px;
+    display: flex;
+    padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: antiquewhite;
     color: black;
 }
 
 .main-header div {
+    display: flex;
     padding-top: 15px;
-    margin-right: 20px;
+    margin-right: 50px;
     float: right;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
 .main-header div ul {
-    list-style-type: none;
+    list-style-type:circle;
 }
 
-.main header ul li {
-    display: inline-block;
+.main-header div ul li {
+    display:inline-block;
     margin-left: 25px;
 }
 
 .image {
-    width: 500px;
-    border-radius: 15px 50px 30px;
+    width: 150px;
+    border-radius: 20px 20px 20px;
+}
+
+a {
+    color: black;
+    text-decoration: wavy;
+}
+
+.content h1 {
+    color: blanchedalmond;
+}
+
+.content img {
+    width:25%;
+}
+
+.left {
+    border-radius: 30px;
 }
