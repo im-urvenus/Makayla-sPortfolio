@@ -1,28 +1,32 @@
+/* using variable because colors will be reapted*/
 :root {
     --clr-dark: black;
     --clr-light: blanchedalmond;
 
 } 
 
+/* useful code for responsive design*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* varaible color being used throughout webpage*/
 body {
     background-color: var(--clr-dark);
 }
 
+/* will control how childeren are displayed*/
 .main-header {
     display: flex;
-    flex: 2;
     padding: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: var(--clr-light);
     color: var (--clr-dark);
 }
 
+/* will control how childeren are displayed, evenly spaced*/
 .main-header div {
     display: flex;
     justify-content: space-evenly;
@@ -33,12 +37,14 @@ body {
     font-size: 20px;
 }
 
+/* will control how childeren are displayed, flex end point*/
 .main-header div ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     list-style-type:none
 }
 
+/* will control how childeren are displayed along main axis*/
 .main-header div ul li {
     display: flex;
     justify-content: flex-start;
@@ -46,11 +52,13 @@ body {
     margin-left: 25px;
 }
 
+/*a href will be this color with wavy text*/
 a {
     color: var(--clr-dark);
     text-decoration: wavy;
 }
 
+/* Will stay in centered*/
 .content h1,
 .content p {
     display: flex;
@@ -59,6 +67,7 @@ a {
     color: var(--clr-light);
 }
 
+/* rounded border for image and positioning*/
 .Avatar {
     width: 20%;
     margin-left: auto;
@@ -67,19 +76,24 @@ a {
     border-radius: 50px 50px 20px;
 }
 
+
+/* img is in flexbox, has rounded border and has been sized*/
 .position {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width:10%;
+    width:20%;
     border-radius: 50px 25px 20px;
 }
 
+/* p's font, size and postioning determined*/
 #AboutTheCreator p {
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     margin-left: auto;
 }
+
+
 
 .main-header {
     display: flex;
@@ -87,13 +101,15 @@ a {
     align-items: baseline;
 }
 
+/* footers sizing and font size being determined, variable reused color, and how text is being positioned*/
 footer {
-    padding: 50px;
+    padding: 60px;
     font-size: 25px;
     color: var(--clr-light);
     text-align: center;
 }
 
+/* header and footer will turn white after anything 992px*/
 @media all and (max-width: 992px) {
     .main-header,
     footer {
